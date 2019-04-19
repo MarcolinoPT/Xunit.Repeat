@@ -6,3 +6,15 @@ After a quick search I found that others had stumbled upon the same [need](https
 so I provided some code to help them out but thoght to myself this could be probably be useful if we had it as package.
 
 Feel free to provide feedback, additional requests or PRs for future improvement.
+
+## Usage
+
+```
+[Theory()]
+[Repeat(10)]
+public void Test(int iterationNumber)
+{
+...
+}
+```
+Iteration number should be added in order to run the test.
