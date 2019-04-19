@@ -1,4 +1,4 @@
-﻿namespace Xunit.Repeat.net.Tests
+﻿namespace Xunit.Repeat.Tests
 {
     using FluentAssertions;
     using System.Collections.Generic;

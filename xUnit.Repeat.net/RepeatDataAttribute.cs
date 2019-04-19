@@ -1,4 +1,4 @@
-﻿namespace Xunit.Repeat.net
+﻿namespace Xunit.Repeat
 {
     public sealed class RepeatDataAttributeAttribute : Xunit.Sdk.DataAttribute
     {
