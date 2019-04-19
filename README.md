@@ -1,4 +1,4 @@
-# xUnit.Repeat.net
+# xUnit.Repeat
 Repeat attribute for xUnit.net
 
 Why? Because once upon a time I had the need to do use such an attribute but xUnit did not have it.
