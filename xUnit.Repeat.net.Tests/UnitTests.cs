@@ -1,4 +1,4 @@
-﻿namespace xUnit.Repeat.net.Tests
+﻿namespace Xunit.Repeat.net.Tests
 {
     using FluentAssertions;
     using System.Collections.Generic;
@@ -16,7 +16,7 @@
             public void It_should_throw_ArgumentException(int count)
             {
                 // Arrange/Act
-                System.Action act = () => new RepeatAttribute(count: count);
+                System.Action act = () => new RepeatDataAttributeAttribute(count: count);
                 // Assert
                 act
                     .Should()
@@ -31,7 +31,7 @@
             {
                 // Arrange
                 const int count = 2;
-                var sut = new RepeatAttribute(count: count);
+                var sut = new RepeatDataAttributeAttribute(count: count);
                 // Act
                 var iterationNumbers = sut.GetData(testMethod: null);
                 // Assert
@@ -45,7 +45,7 @@
             {
                 // Arrange
                 const int count = 2;
-                var sut = new RepeatAttribute(count: count);
+                var sut = new RepeatDataAttributeAttribute(count: count);
                 var iterations = new List<object[]>
                 {
                     new object[]{ 1 },

@@ -1,10 +1,10 @@
-﻿namespace xUnit.Repeat.net
+﻿namespace Xunit.Repeat.net
 {
-    public sealed class RepeatAttribute : Xunit.Sdk.DataAttribute
+    public sealed class RepeatDataAttributeAttribute : Xunit.Sdk.DataAttribute
     {
         private readonly int count;
 
-        public RepeatAttribute(int count)
+        public RepeatDataAttributeAttribute(int count)
         {
             const int minimumCount = 1;
             if (count < minimumCount)
