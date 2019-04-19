@@ -8,8 +8,8 @@
     <ProjectGuid>{E0865F20-8050-4A7F-A525-720740AF963C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>xUnit.Repeat.net</RootNamespace>
-    <AssemblyName>xUnit.Repeat.net</AssemblyName>
+    <RootNamespace>xUnit.Repeat</RootNamespace>
+    <AssemblyName>xUnit.Repeat</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
