@@ -1,9 +1,8 @@
-﻿namespace xUnit.Repeat.Tests
+﻿namespace Xunit.Repeat.Tests
 {
     using FluentAssertions;
     using Xunit;
     using Xunit.Priority;
-    using Xunit.Repeat;
 
     [TestCaseOrderer(ordererTypeName: PriorityOrderer.Name, ordererAssemblyName: PriorityOrderer.Assembly)]
     public class IntegrationTests
