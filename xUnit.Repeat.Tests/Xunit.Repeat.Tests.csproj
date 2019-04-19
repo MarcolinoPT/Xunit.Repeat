@@ -75,7 +75,7 @@
     <Analyzer Include="..\packages\xunit.analyzers.0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\xUnit.Repeat.net\Xunit.Repeat.csproj">
+    <ProjectReference Include="..\xUnit.Repeat\Xunit.Repeat.csproj">
       <Project>{e0865f20-8050-4a7f-a525-720740af963c}</Project>
       <Name>Xunit.Repeat</Name>
     </ProjectReference>
