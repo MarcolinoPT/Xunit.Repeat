@@ -1,4 +1,6 @@
 # Xunit.Repeat
+[![Build status](https://ci.appveyor.com/api/projects/status/282evix4706ypdt1?svg=true)](https://ci.appveyor.com/project/MarcolinoPT/xunit-repeat)
+
 Repeat attribute for xUnit.net
 
 Why? Because once upon a time I had the need to do use such an attribute but xUnit did not have it.
