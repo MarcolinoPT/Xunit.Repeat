@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("xUnit.Repeat.net")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Xunit.Repeat")]
+[assembly: AssemblyDescription("Repeat attribute to use with Xunit")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("xUnit.Repeat.net")]
+[assembly: AssemblyCompany("Marco de Freitas")]
+[assembly: AssemblyProduct("")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

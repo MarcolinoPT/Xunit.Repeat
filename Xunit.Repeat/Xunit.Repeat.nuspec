@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Xunit.Repeat</id>
+    <version>1.0.0</version>
+    <title>Xunit.Repeat</title>
+    <authors>MarcolinoPT</authors>
+    <owners>MarcolinoPT</owners>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/MarcolinoPT/Xunit.Repeat</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Repeat attribute to use with Xunit</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>xunit repeat test csharp dotnet unit</tags>
+  </metadata>
+</package>
