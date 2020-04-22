@@ -1,25 +1,30 @@
 ﻿namespace Xunit.Repeat
 {
-    public sealed class RepeatAttribute : Xunit.Sdk.DataAttribute
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Reflection;
+    using Xunit.Sdk;
+
+    public sealed class RepeatAttribute : DataAttribute
     {
-        private readonly int count;
+        private readonly int _count;
 
         public RepeatAttribute(int count)
         {
             const int minimumCount = 1;
             if (count < minimumCount)
             {
-                throw new System.ArgumentOutOfRangeException(
+                throw new ArgumentOutOfRangeException(
                     paramName: nameof(count),
-                    message: "Repeat count must be greater than 0."
-                    );
+                    message: "Repeat count must be greater than 0.");
             }
-            this.count = count;
+            _count = count;
         }
 
-        public override System.Collections.Generic.IEnumerable<object[]> GetData(System.Reflection.MethodInfo testMethod)
+        public override IEnumerable<object[]> GetData(MethodInfo testMethod)
         {
-            foreach (var iterationNumber in System.Linq.Enumerable.Range(start: 1, count: this.count))
+            foreach (var iterationNumber in Enumerable.Range(start: 1, count: _count))
             {
                 yield return new object[] { iterationNumber };
             }
