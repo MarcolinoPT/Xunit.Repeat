@@ -11,9 +11,6 @@ dotnet_csproj:
   assembly_version: '{version}'
   file_version: '{version}'
   informational_version: '{version}'
-environment:
-  nuget_api_key:
-    secure: CHBZqd5tvF40eTOeX4S85Xb4U7FoaZMMxD65HjHhPgQlzLVXoYnEmmdReehmivdI
 before_build:
 - cmd: nuget restore
 build:
@@ -23,5 +20,8 @@ test:
   assemblies:
     only:
     - '**\bin\release\Xunit.Repeat.Tests.dll'
-on_success:
-- cmd: nuget push https://ci.appveyor.com/nuget/xunit-repeat-t3v4juq7t2o6/Xunit.Repeat.%APPVEYOR_BUILD_VERSION%.nupkg -ApiKey %nuget_api_key% -Source https://api.nuget.org/v3/index.json
+deploy:
+- provider: NuGet
+  api_key:
+    secure: CHBZqd5tvF40eTOeX4S85Xb4U7FoaZMMxD65HjHhPgQlzLVXoYnEmmdReehmivdI
+  skip_symbols: false
