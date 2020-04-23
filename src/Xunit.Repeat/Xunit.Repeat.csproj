@@ -10,6 +10,7 @@
         <Authors>Marco de Freitas</Authors>
         <Version>1.1.0</Version>
         <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <IsPackable>true</IsPackable>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="xunit" Version="2.4.1" />
