@@ -30,6 +30,5 @@ deploy:
 - provider: NuGet
   api_key:
     secure: CHBZqd5tvF40eTOeX4S85Xb4U7FoaZMMxD65HjHhPgQlzLVXoYnEmmdReehmivdI
-  skip_symbols: false
-  symbol_server: https://ci.appveyor.com/nuget/xunit-repeat-t3v4juq7t2o6/api/v2/package
-  artifact: /.*\.symbols\.nupkg/
+  skip_symbols: true
+  artifact: $(temp_path)\*.nupkg
