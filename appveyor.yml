@@ -1,0 +1,23 @@
+version: 1.1.{build}
+image: Visual Studio 2019
+configuration: Release
+platform: Any CPU
+
+nuget:
+  account_feed: true
+  project_feed: true
+  disable_publish_on_pr: true
+  disable_publish_octopus: true
+
+before_build:
+- cmd: nuget restore
+
+build:
+  verbosity: normal
+  project: xUnit.Repeat.sln
+  publish_nuget: true
+
+test:
+  assemblies:
+    only:
+    - '**\bin\release\Xunit.Repeat.Tests.dll'
