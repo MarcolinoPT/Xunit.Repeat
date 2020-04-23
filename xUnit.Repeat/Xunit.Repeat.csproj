@@ -2,7 +2,7 @@
     <PropertyGroup>
         <TargetFramework>netstandard1.1</TargetFramework>
         <Company></Company>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
         <Description>Repeat attribute to use with Xunit</Description>
         <RepositoryUrl>https://github.com/MarcolinoPT/xUnit.Repeat</RepositoryUrl>
         <PackageProjectUrl>https://www.nuget.org/packages/Xunit.Repeat/</PackageProjectUrl>
@@ -13,5 +13,8 @@
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="xunit" Version="2.4.1" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="build\" />
     </ItemGroup>
 </Project>
