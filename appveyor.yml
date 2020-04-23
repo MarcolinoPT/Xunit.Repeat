@@ -18,13 +18,13 @@ before_build:
 - cmd: nuget restore
 build:
   publish_nuget: true
-  verbosity: minimal
+  verbosity: normal
 test:
   assemblies:
     only:
     - '**\bin\release\Xunit.Repeat.Tests.dll'
 artifacts:
-- path: '**\*.nupkg'
+- path: $(temp_path)\*.nupkg
   name: NuGet package
 deploy:
 - provider: NuGet
